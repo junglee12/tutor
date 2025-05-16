@@ -147,7 +147,7 @@ else:
             chat_config = types.GenerateContentConfig(
                 temperature=st.session_state.temperature,
                 top_p=st.session_state.top_p,
-                system_instruction=st.session_state.system_instruction if st.session_state.locked_access else default_system_instruction,
+                system_instruction=st.session_state.system_instruction,
             )
 
             # Get model response
