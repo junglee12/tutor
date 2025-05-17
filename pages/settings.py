@@ -34,7 +34,8 @@ else:
     system_instruction = st.text_area(
         "System Instruction",
         value=st.session_state.get("system_instruction", ""),
-        help="Instructions for the model to steer it toward better performance. E.g., 'Answer as concisely as possible'."
+        help="Instructions for the model to steer it toward better performance. E.g., 'Answer as concisely as possible'.",
+        disabled=True # Add this parameter
     )
 
 # Unlocked settings
